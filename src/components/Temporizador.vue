@@ -24,7 +24,7 @@ import Botao from './Botao.vue'
 
 export default defineComponent({
   name: 'Temporizador',
-  emits: ['aoTemporizadorFinalizado'],
+  emits: ['ao-temporizador-finalizado'],
   components: {
     Cronometro, 
     Botao
@@ -45,7 +45,7 @@ export default defineComponent({
     },
     finalizar() {
       clearInterval(this.cronometro)
-      this.$emit('aoTemporizadorFinalizado', this.tempoEmSegundos)
+      this.$emit('ao-temporizador-finalizado', this.tempoEmSegundos)
       this.tempoEmSegundos = 0
       this.cronometro = 0
     },
