@@ -17,7 +17,7 @@ import { defineComponent } from "vue";
 import Formulario from "../components/Formulario.vue"
 import Tarefa from "../components/Tarefa.vue"
 import Box from "../components/Box.vue"
-import { ITarefa } from "../interfaces/ITarefa";
+import type { ITarefa } from "../interfaces/ITarefa";
 
 interface State {
   tarefas: ITarefa[],
